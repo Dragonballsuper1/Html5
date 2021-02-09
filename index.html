@@ -2,11 +2,20 @@
 <html>
 <head>
 <title>This is Steven's website.</title>
+<script> 
+function checkName(){ 
+alert("your name is bad:"+username.value)}
+</script>
 </head>
 <body>
 
-<h1>I enjoy playing BTD, battles, Roblox, Minecraft, and Brawl Stars.</h1>
-<p>Those are the best games..</p>
-
+<h1 style= "color:green;">I enjoy playing BTD battles, Roblox, Minecraft, and Brawl Stars.</h1>
+<h1 style= "color:red;">Those are the best games.</h1>
+What is your name?
+<input id="username" type ="text" onchange="checkName()" >
+<p>What is your age?</p>
+<input type="number">
+<p></p>
+<button>Submit</button><br>
 </body>
 </html>
