@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>This is Steven's website.</title>
-<script> 
-function checkName(){ 
-alert("your name is bad:"+username.value)}
-</script>
-</head>
-<body>
+    <head>
+        <title>This is Steven's website.</title>
+        <script>
+            function checkName() {
+                if (username.value.length < 2) {
+                    alert("your name is too short:" + username.value);
+                }
+                if (username.value.length > 15) {
+                    alert("your name is too long:" + username.value);
+                }
+            }
+        </script>
+    </head>
 
-<h1 style= "color:green;">I enjoy playing BTD battles, Roblox, Minecraft, and Brawl Stars.</h1>
-<h1 style= "color:red;">Those are the best games.</h1>
-What is your name?
-<input id="username" type ="text" onchange="checkName()" >
-<p>What is your age?</p>
-<input type="number">
-<p></p>
-<button>Submit</button><br>
-</body>
+    <body>
+        <h1 style="color: green;">I enjoy playing BTD battles, Roblox, Minecraft, and Brawl Stars.</h1>
+        <h1 style="color: red;">Those are the best games.</h1>
+        What is your first name?
+        <input id="username" type="text" onchange="checkName()" />
+        <p>What is your age?</p>
+        <input type="number" />
+        <p></p>
+        <button>Submit</button><br />
+    </body>
 </html>
