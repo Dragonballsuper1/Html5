@@ -12,6 +12,11 @@
                 }
                  else alert("Your name is perfect:");
                 }
+             function checkAge() {
+               if (age.value<6) alert("you are too young")
+               else if (age.value>75) alert("you are too old");
+                else alert("Your age is perfect:");
+             }
         </script>
     </head>
 
@@ -21,7 +26,7 @@
         What is your first name?
         <input id="username" type="text" onchange="checkName()" />
         <p>What is your age?</p>
-        <input type="number" />
+        <input type="number" id="age" onchange="checkAge()"/>
         <p></p>
         <button>Submit</button><br />
     </body>
