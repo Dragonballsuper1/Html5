@@ -17,17 +17,25 @@
                else if (age.value>25) alert("you are too old");
                 else alert("Your age is perfect:");
              }
+             function checkPassword(){
+               //password must be 8-20 chacters long
+               //password must have both lower and uppercase letters
+               //password must have a number
+
+             }
         </script>
     </head>
 
     <body>
         <h1 style="color: green;">I enjoy playing BTD battles, Roblox, Minecraft, and Brawl Stars.</h1>
         <h1 style="color: red;">Those are the best games.</h1>
-        What is your first name?
+        <p>What is your first name?</p>
         <input id="username" type="text" onchange="checkName()" />
         <p>What is your age?</p>
         <input type="number" id="age" onchange="checkAge()"/>
         <p></p>
+        <p>What is your password?</p>
+        <input type="password" id="password" onchange="checkPassword()" />
         <button>Submit</button><br />
     </body>
 </html>
