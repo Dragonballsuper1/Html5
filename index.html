@@ -10,18 +10,22 @@
                 else if (username.value.length > 7) {
                     alert("your name is too long:" + username.value);
                 }
-                 else alert("Your name is perfect:");
+                 else alert("Your name is great:");
                 }
              function checkAge() {
                if (age.value<6) alert("you are too young")
                else if (age.value>25) alert("you are too old");
-                else alert("Your age is perfect:");
+                else alert("Your age is great:");
              }
              function checkPassword(){
-               //password must be 8-20 chacters long
-               //password must have both lower and uppercase letters
+               if (password.value.length<8)
+               alert("a strong passwrod must have 1 number and 8-20 lower or uppercase chacters.")
+             else if (password.value.length>20)
+              alert("your password is too long.")
+             else alert("Your password is great")
+             //password must be 8-20 chacters long
+              //password must have both lower and uppercase letters
                //password must have a number
-
              }
         </script>
     </head>
