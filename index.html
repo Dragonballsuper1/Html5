@@ -31,7 +31,9 @@
               let isallUpperCase= ps==ps.toUpperCase()
               if(isalllowercase || isallUpperCase){alert ("Your password must have both upper and lower case letters.")}
               else alert("You followed the rules")
-               //3.the password must have a number
+               //3.the password must have a numbers and letters
+               for(let index=0; index<ps.length; index++){if( ps[index] *0==0)consle.log('is a number')
+               }
              }
 	</script>
 </head>
@@ -45,7 +47,7 @@
         <input type="number" id="age" onchange="checkAge()"/>
         <p></p>
         <p>What is your password?</p>
-        <input type="password" id="password" onchange="checkPassword()" />
+        <input type="password" id="password" onchange="checkPassword()"/>
         <button>Submit</button><br />
     </body>
 </html>
