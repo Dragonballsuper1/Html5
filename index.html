@@ -31,7 +31,12 @@
               let isallUpperCase= ps==ps.toUpperCase()
               if(isalllowercase || isallUpperCase){alert ("Your password must have both upper and lower case letters.")}
               else alert("You followed the rules")
-               //3.the password must have a numbers and letters
+               //3.the password must have a number
+              let hasNumber=false 
+              for (let index = 0; index <ps.length; index++){
+    if (ps[index]*0 == 0) hasNumber = true;
+}
+if(hasNumber==false){alert("the password must have a number")}
                for(let index=0; index<ps.length; index++){if( ps[index] *0==0)consle.log('is a number')
                }
              }
