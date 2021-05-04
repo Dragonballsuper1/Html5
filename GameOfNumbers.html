@@ -4,7 +4,17 @@
 <head>
 	<title>Let's have fun with numbers.</title>
 	<script>
-		
+		function isOdd() 
+    {
+
+    let val=bignumber.value
+    if(val%2==1){
+    output.innerHTML="<h3>" + val + "is odd.</h3>"
+    }
+    else{
+      output.innerHTML="<h3>" + val + "is even.</h3>"
+    }
+  }
 	</script>
 </head>
 
@@ -12,7 +22,10 @@
 	<h1 style="color: blue;">I enjoy playing Roblox. </h1>
 	
         <p>Please enter a number.</p>
-        <input type="number" id="age" onchange="checkAge()"/>
-        <br>Is the number odd?</button><br />
+        <input type="number" id="bignumber"/>
+        <p>
+        <button onclick="isodd()">Is the number odd?
+        </button> <p />
+        <p id="output"><p />
     </body>
 </html>
