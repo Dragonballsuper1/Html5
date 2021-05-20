@@ -4,25 +4,36 @@
         <title>Let's have fun with numbers.</title>
         <script>
             function isodd() {
-                let val = bignumber.value;
-                if (val % 2 == 1) {
-                    output.innerHTML = "<h3>" + val + " is odd</h3>";
+                if (bignumber.value%2 == 0){
+                  alert("The number is even.");
                 } else {
-                    output.innerHTML = "<h3>" + val + " is even</h3>";
+                    alert("The number is odd.");
                 }
-            }
-        </script>
-    </head>
+              }
+              function divisable3(){
+                var divident=3;
+                 if (bignumber.value % divident == 0){
+                   alert("The number can be divided by 3."+ divident);
+                 } else {
+                    alert("The number cannot be divided by 3.");
+                 }
+              }
+              function autofill(){
+              let ran=Math.random()*500
+              let big=Math.round(ran)
+              bignumber.value=big
+              }
 
-    <body>
-        <h1 style="color: blue;">I enjoy playing Roblox.</h1>
+              </script>
+           </head>
 
-        <p>Please enter a number.</p>
-        <input type="number" id="bignumber" />
-        <p>
-            <button onclick="isodd()">Is the number odd?</button>
-        </p>
-        <p />
-        <p id="output"></p>
-    </body>
-</html>
+           <body>
+               <hi style="color: green;">Lets have fun with numbers.</hi>
+
+               <p>Start by entering a number.</p>
+               <input type= "number" id="bignumber" />
+               <button onclick="autofill()">Is this number even or odd?</button><br /></p>
+       
+             <p><button onclick="divisable3()">Is the number divisable by 3?</button><br /></p>
+         </body>
+     </html>
