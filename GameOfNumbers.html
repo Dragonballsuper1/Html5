@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Let's have fun with numbers.</title>
@@ -11,9 +11,9 @@
                 }
               }
               function divisable3(){
-                var divident=3;
+                let divident=3;
                  if (bignumber.value % divident == 0){
-                   alert("The number can be divided by 3."+ divident);
+                   alert("The number can be divided by 3.");
                  } else {
                     alert("The number cannot be divided by 3.");
                  }
@@ -28,12 +28,13 @@
            </head>
 
            <body>
-               <hi style="color: green;">Lets have fun with numbers.</hi>
+               <h1 style="color: green;">Lets have fun with numbers.</h1>
 
                <p>Start by entering a number.</p>
                <input type= "number" id="bignumber" />
-               <button onclick="autofill()">Is this number even or odd?</button><br /></p>
+               <button onclick="autofill()">Random number.?</button><br /></p>
        
              <p><button onclick="divisable3()">Is the number divisable by 3?</button><br /></p>
+             <p><button onclick="isodd()">Is the number even or odd?</button><br /></p>
          </body>
      </html>
