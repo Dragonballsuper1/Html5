@@ -3,38 +3,22 @@
     <head>
         <title>Let's have fun with numbers.</title>
         <script>
-            function isodd() {
-                if (bignumber.value%2 == 0){
-                  alert("The number is even.");
-                } else {
-                    alert("The number is odd.");
-                }
-              }
-              function divisable3(){
-                let divident=3;
-                 if (bignumber.value % divident == 0){
-                   alert("The number can be divided by 3.");
-                 } else {
-                    alert("The number cannot be divided by 3.");
-                 }
-              }
-              function autofill(){
-              let ran=Math.random()*5000
-              let big=Math.round(ran)
-              bignumber.value=big
-              }
-              function issquare(){
-              let sq=bignumber.value
-              let root=Math.sqrt (sq)
-              if(Number.isInteger(root)){
-                    alert("Yes the number is square.")
-              }   else{alert("No the number is not square.")}
-              }
-             function isInteger(num) {
-               if(1*num==Math.round(*1rum)){return true}
 
-               else{return false}
-             }
+        function isodd() { if (bignumber.value % 2 == 0) { alert("The number is even."); } else { alert("The number is odd."); } }
+        function divisable3() { let divident = 3; if (bignumber.value % divident == 0) { alert("The number can be divided by 3."); } else { alert("The number cannot be divided by 3."); } }
+        function autofill() { 
+            let ran = Math.random() * 5000 
+            let big = Math.round(ran) 
+            bignumber.value = big 
+        }
+        function issquare() { 
+            let sq = bignumber.value 
+            let root = Math.sqrt(sq) 
+            if (Number.isInteger(root)) { alert("Yes the number is square.") } 
+            else { alert("No the number is not square.") } 
+        }
+        function isInteger(num) { if (1 * num == Math.round(1*num)) { return true } else { return false } }
+    
               </script>
            </head>
 
