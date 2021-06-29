@@ -21,6 +21,15 @@
         function isPositive(num) {
           if (num>=0){return true} else {return false}
         }
+      function isCube() {
+                let cb = bignumber.value;
+                let root = Math.cbrt(cb);
+                if (Number.isInteger(root)) {
+                    alert("Yes the number is cube");
+                } else {
+                    alert("No the number is not cube");
+                }
+            }
               </script>
            </head>
 
@@ -38,5 +47,7 @@
     <p id="output"></p
              <p><button onclick="alert(isPositive(bignumber.value))">Is the number
                positive?</button></p>
+               <p><button onclick="isCube()">Is the number
+               a cube?</button></p>
          </body>
      </html>
