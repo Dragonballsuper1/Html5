@@ -7,6 +7,10 @@
 cel=(fahr-32)*5/9
 return cel;
         }
+        function converterFtoC(){
+          f=Fahrenheit.value
+          Celsius.value=FtoC(f)
+        }
               </script>
            </head>
 
@@ -18,7 +22,7 @@ return cel;
     <th>Celsius</th>
   </tr>
   <tr>
-<td><input type="number" id="Fahrenheit"/></td>
+<td><input type="number" id="Fahrenheit" onchange="converterFtoC()"/></td>
 <td><input type="number" id="Celsius"/></td>
   </tr>
 
