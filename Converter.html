@@ -9,7 +9,7 @@ return cel;
         }
         function converterFtoC(){
           f=Fahrenheit.value
-          Celsius.value=FtoC(f)
+          Celsius.value=FtoC(f).toFixed(2);
         }
         function CtoF(cel){
           fahr=(cel*9/5)+32
@@ -17,7 +17,7 @@ return fahr;
         }
         function converterCtoF(){
           c=Celsius.value
-          Fahrenheit.value=CtoF(c)
+          Fahrenheit.value=CtoF(c).toFixed(2);
         }
               </script>
            </head>
@@ -33,7 +33,14 @@ return fahr;
 <td><input type="number" id="Fahrenheit" onchange="converterFtoC()"/></td>
 <td><input type="number" id="Celsius" onchange="converterCtoF()"/></td>
   </tr>
-
+  <tr>
+<th>Inches</th>
+<th>Centimeter</th>
+  </tr>
+  <tr>
+<td><input type="number" id="Inches" onchange="onverterItoC()"/></td>
+<td><input type="number" id="Centimeters" onchange="onverterCtoI()"/></td>
+  </tr>
 </table>
          </body>
      </html>
