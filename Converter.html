@@ -19,6 +19,22 @@ return fahr;
           c=Celsius.value
           Fahrenheit.value=CtoF(c).toFixed(2);
         }
+        function ItoC(inch){
+          cm=(inch*2.54)
+          return cm;
+        }
+        function converterItoC(){
+          i=Inch.value
+          Centimeter.value=ItoC(i).toFixed(2);
+        }
+        function CtoI(cm){
+          inch=(cm/2.54)
+          return inch
+        }
+        function converterCtoI(){
+          c=Centimeter.value
+          c=Inch.value=CtoI(c).toFixed(2);
+        }
               </script>
            </head>
 
@@ -38,8 +54,8 @@ return fahr;
 <th>Centimeter</th>
   </tr>
   <tr>
-<td><input type="number" id="Inches" onchange="onverterItoC()"/></td>
-<td><input type="number" id="Centimeters" onchange="onverterCtoI()"/></td>
+<td><input type="number" id="Inch" onchange="converterItoC()"/></td>
+<td><input type="number" id="Centimeter" onchange="converterCtoI()"/></td>
   </tr>
 </table>
          </body>
