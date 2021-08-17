@@ -35,6 +35,23 @@ return fahr;
           c=Centimeter.value
           c=Inch.value=CtoI(c).toFixed(2);
         }
+        function GtoL(gl){
+          liter=(gl*3.78541)
+          return liter
+        }
+        function converterGtoL(){
+         g=Gallon.value
+          g=Liter.value=GtoL(g).toFixed(2);
+        }
+        function LtoG(li){
+          gallon=(li/3.78541)
+          return gallon
+        }
+        function converterLtoG(){
+         l=Liter.value
+          l=Gallon.value=LtoG(l).toFixed(2);
+        }
+
               </script>
            </head>
 
@@ -56,6 +73,14 @@ return fahr;
   <tr>
 <td><input type="number" id="Inch" onchange="converterItoC()"/></td>
 <td><input type="number" id="Centimeter" onchange="converterCtoI()"/></td>
+  <tr>
+    <tr>
+<th>Gallon</th>
+<th>Liter</th>
+  </tr>
+  <tr>
+    <td><input type="number" id="Gallon" onchange="converterGtoL()"/></td>
+<td><input type="number" id="Liter" onchange="converterLtoG()"/></td>
   </tr>
 </table>
          </body>
